@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Install Dependencies') {
             steps {
-                bat 'py -m pip install -r requirements.txt'
+                bat '"C:\\Users\\Vinay S\\anaconda3\\python.exe" -m pip install -r requirements.txt'
             }
         }
 
         stage('Test') {
             steps {
-                bat 'py -m pytest'
+                bat '"C:\\Users\\Vinay S\\anaconda3\\python.exe" -m pytest'
             }
         }
 
